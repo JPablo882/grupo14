@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Bitacora.css";
+import "./bitacora.css";
 
 export default function Bitacora() {
   const [logs, setLogs] = useState([]);
