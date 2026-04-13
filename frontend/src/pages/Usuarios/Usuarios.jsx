@@ -13,7 +13,7 @@ export default function Usuarios() {
 
   // 🔥 CARGAR USUARIOS
   const cargarUsuarios = () => {
-    fetch("http://127.0.0.1:8000/api/users/usuarios/")
+    fetch("http://13.21.128.108:8000/api/users/usuarios/")
       .then(res => res.json())
       .then(data => setUsuarios(data));
   };
@@ -32,7 +32,7 @@ export default function Usuarios() {
 
   // 🔥 CREAR USUARIO
   const crearUsuario = () => {
-    fetch("http://127.0.0.1:8000/api/users/usuarios/", {
+    fetch("http://3.21.128.108:8000/api/users/usuarios/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -57,7 +57,7 @@ export default function Usuarios() {
   const eliminarUsuario = (id) => {
     if (!window.confirm("¿Eliminar usuario?")) return;
 
-    fetch(`http://127.0.0.1:8000/api/users/usuarios/${id}/`, {
+    fetch(`http://3.21.128.108:8000/api/users/usuarios/${id}/`, {
       method: "DELETE"
     })
       .then(() => {

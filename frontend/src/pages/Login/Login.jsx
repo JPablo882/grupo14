@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/api/login/", {
+      const res = await axios.post("http://3.21.128.108:8000/api/login/", {
         username,
         password,
       });

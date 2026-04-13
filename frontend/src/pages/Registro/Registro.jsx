@@ -37,7 +37,7 @@ export default function Registro() {
 
       // 🔥 PETICIÓN AL BACKEND
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/clientes/registro/",
+        "http://3.21.128.108:8000/api/clientes/registro/",
         {
           nombre_completo: form.nombre,
           telefono: form.telefono,
