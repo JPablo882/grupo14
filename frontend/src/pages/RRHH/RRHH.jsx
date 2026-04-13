@@ -78,7 +78,7 @@ const crearEmpleado = async () => {
 
     console.log("ENVIANDO:", datos);
 
-    await axios.post("http://3.21.128.108:8000/api/empleados/empleados/", datos);
+    await axios.post("/api/empleados/empleados/", datos);
 
     setMostrarModal(false);
     obtenerEmpleados();

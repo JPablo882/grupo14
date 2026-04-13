@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://juggle-overprice-monkhood.ngrok-free.dev/api/login/", {
+      const res = await axios.post("/api/login/", {
         username,
         password,
       });
