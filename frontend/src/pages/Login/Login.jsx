@@ -21,8 +21,9 @@ export default function Login() {
       localStorage.setItem("token", res.data.access);
       navigate("/dashboard");
     } catch (error) {
-      alert("Credenciales incorrectas ❌");
-    }
+  console.log(error.response);
+  alert("Error real: " + JSON.stringify(error.response?.data));
+}
   };
 
   return (
