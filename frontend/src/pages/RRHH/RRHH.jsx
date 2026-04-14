@@ -22,7 +22,7 @@ export default function RRHH() {
   // 📡 OBTENER EMPLEADOS (VERSIÓN SEGURA)
   const obtenerEmpleados = async () => {
     try {
-      const res = await axios.get("http://3.21.128.108:8000/api/empleados/empleados/");
+      const res = await axios.get("http://3.21.128.108/api/empleados/empleados/");
 
       console.log("DATA API:", res.data);
 

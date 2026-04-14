@@ -5,7 +5,7 @@ export default function Bitacora() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://3.21.128.108:8000/api/users/bitacora/")
+    fetch("http://3.21.128.108/api/users/bitacora/")
       .then(res => res.json())
       .then(data => setLogs(data))
       .catch(err => console.log(err));
